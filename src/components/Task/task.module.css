@@ -1,3 +1,11 @@
 .task {
   /* Sample  */
+  border:1px solid red;
+  
 }
+
+
+.taskdiv {
+  text-decoration: line-through;
+}
+

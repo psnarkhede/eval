@@ -1,3 +1,8 @@
 .counter {
   /* TODO */
 }
+
+.btn1, .btn2{
+  padding:10px;
+  color:red;
+}

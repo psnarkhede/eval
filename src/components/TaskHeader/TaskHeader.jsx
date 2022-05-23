@@ -1,9 +1,9 @@
 import React from "react";
 import styles from "./taskHeader.module.css";
 
-const TaskHeader = () => {
+const TaskHeader = (props) => {
   // sample values to be replaced
-  let totalTask = 0;
+  let totalTask = props.data.length;
   let unCompletedTask = 0;
 
   // NOTE: do not delete `data-cy` key value pair
@@ -11,6 +11,7 @@ const TaskHeader = () => {
     <div data-cy="task-header" className={styles.taskHeader}>
       <b data-cy="header-remaining-task">{unCompletedTask}</b>
       <b data-cy="header-total-task">{totalTask}</b>
+
     </div>
   );
 };
